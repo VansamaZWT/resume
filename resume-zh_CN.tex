@@ -9,54 +9,60 @@
 % \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
+\usepackage{enumitem}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{千早爱音}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{211220136@smail.nju.edu.cn} \textperiodcentered\ 
+  \phone{(+86) 13984341840}}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
-
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+\datedsubsection{\textbf{南京大学}}{2021年9月 -- 至今}
+\textit{本科在读}\ 计算机科学与技术系, 预计 2025 年 6 月毕业
+\begin{itemize}[parsep=0.5ex]
+  \item GPA: 4.34 / 5.0, 排名: 前28.6\%
+  \item 核心课程: 计算机系统基础, 算法设计与分析, 操作系统, 计算机网络, 形式语言与自动机, 编译原理
+  \item 选修课程: 程序设计语言的形式语义, 软件分析, 组合数学
+  \item 担任过SICP课程(2021年秋季学期)和操作系统课程(2023年春季学期, 大班)的助教
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
+\section{\faHeartO\ 获奖情况}
+\datedline{人民奖学金三等奖}{2023年12月}
+\datedline{人民奖学金三等奖}{2022年12月}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{类UNIX操作系统}}{2023年2月 -- 2023年6月}
+\role{C, Linux}{南京大学操作系统课程(2023年春季学期, 大班)课程实验}
+\begin{itemize}[parsep=0.5ex,topsep=0pt]
+  \item 项目地址：https://git.nju.edu.cn/oslab2023/oslab
+  \item 基于i386架构, 支持在分页虚拟内存上加载执行ELF文件, 分时多进程, 实现了类UNIX文件系统, 能在QEMU上执行
 \end{itemize}
-\end{onehalfspacing}
+
+\vspace{0.5ex}
+
+\datedsubsection{\textbf{Java程序静态分析器}}{2023年9月 -- 2023年12月}
+\role{Java}{软件分析课程实验}
+\begin{itemize}[parsep=0.5ex,topsep=0pt]
+  \item 项目地址：https://github.com/pascal-lab/Tai-e-assignments
+  \item 基于Tai-e框架(教学版)实现
+  \item 包括多种数据流分析, 指针分析和污点分析
+\end{itemize}
+
+\vspace{0.5ex}
+
+\datedsubsection{\textbf{i386指令集模拟器}}{2022年9月 -- 2023年1月}
+\role{C, Linux}{计算机系统基础课程实验}
+\begin{itemize}[parsep=0.5ex,topsep=0pt]
+  \item 项目地址：https://github.com/ics-nju-wl/icspa-public-guide
+  \item 一个完备的i386指令集模拟器(NEMU), 以及一个运行在NEMU上的小型操作系统
+  \item 成功在NEMU上运行了游戏"仙剑奇侠传"
+\end{itemize}
+
+
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -65,25 +71,20 @@ xxx后端开发
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ IT 技能}
+\section{\faCogs\ 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item 编程语言: C > Python > C++ > Java
+  \item 外语: 英语(六级534分)
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
+%\section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
-\end{itemize}
+%\begin{itemize}[parsep=0.5ex]
+%  \item 技术博客: http://blog.yours.me
+%  \item GitHub: https://github.com/username
+%  \item 语言: 英语 - 熟练(TOEFL xxx)
+%\end{itemize}
 
 %% Reference
 %\newpage
